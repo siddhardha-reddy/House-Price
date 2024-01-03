@@ -15,7 +15,7 @@ Facing  = {
 Type  = {
 "Apartment" : 0,"Independent Floor" : 1,"Independent House" : 2,"Residential Plot" : 3,"Studio Apartment" : 4,"Villa" : 5,}
 
-model=pickle.load(open('House_price.pkl','br'))
+model=pickle.load(open('House_Price.pkl','br'))
 def predict(bedrooms,bathrooms,status,size,location,facing,type):
     Selected_location=Location[location]
     Selected_status=Status[status]
